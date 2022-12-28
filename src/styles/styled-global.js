@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import reset from './reset-style';
+import theme from './styled-theme';
 
 const StyledGlobal = createGlobalStyle`
   ${reset}
@@ -8,6 +9,11 @@ const StyledGlobal = createGlobalStyle`
     padding: 0;
     background: rgba(255,255,255,1);
     height: 100vh;
+    font-family: sans-serif;
+  }
+
+  a {
+    color: ${theme.colors.blue};
   }
 `;
 

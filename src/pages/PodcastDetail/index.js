@@ -1,11 +1,16 @@
-import { useFetch } from 'hooks';
+import { useQueryPodcastById } from 'hooks';
 import { useParams } from 'react-router-dom';
+import { MainLayout } from 'layouts';
 
 export const PodcastDetailPage = () => {
   const { podcastId } = useParams();
-  const { data } = useFetch('getPodcastById', podcastId);
+  const { data } = useQueryPodcastById(podcastId);
   console.log(data);
-  return (<h1>DETAIL</h1>);
+  return (
+    <MainLayout>
+      <h1>DETAIL</h1>
+    </MainLayout>
+  );
 };
 
 export const podcastDetail = {

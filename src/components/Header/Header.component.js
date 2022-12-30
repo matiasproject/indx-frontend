@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'components';
 import { StyledHeader } from './Header.styles';
 import { podcastList } from 'pages/PodcastList';
 import loader from 'assets/images/loader.gif';
@@ -10,7 +10,7 @@ export const Header = () => {
   return (
     <StyledHeader>
       <Link to={podcastList.path}>
-        <h1>Podcaster</h1>
+        <h1 title='Volver a home'>Podcaster</h1>
       </Link>
       {isLoading && (
         <img

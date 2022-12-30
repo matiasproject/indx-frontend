@@ -1,19 +1,23 @@
-import { useEffect } from 'react';
+import * as Component from 'components';
 import { MainLayout } from 'layouts';
-import { useFetch } from 'hooks';
-import { loading } from 'state';
-import { services } from 'constants';
+import { useQueryPodcastList, useInputSearch } from 'hooks';
 
 export const PodcastListPage = () => {
-  const { isFetching } = useFetch(services.getPodcast);
+  const {search, onFilterPodcast} = useInputSearch();
+  const { data: podcasts } = useQueryPodcastList(search);
 
-  useEffect(function sincronizeStateService () {
-    loading.value = isFetching;
-  }, [isFetching]);
+  console.log(podcasts?.length)
 
   return (
     <MainLayout>
-      <h1>PodcastListPage</h1>
+      <Component.Searcher
+        handleChange={onFilterPodcast}
+        value={search}
+        results={podcasts?.length}
+      />
+      <section style={{marginTop: '200px'}}>
+        <Component.PodcastGridList podcasts={podcasts} />
+      </section>
     </MainLayout>
   );
 };

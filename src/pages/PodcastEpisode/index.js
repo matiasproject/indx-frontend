@@ -1,9 +1,10 @@
-import { useFetch } from 'hooks';
+import { useQueryPodcastEpisode } from 'hooks';
 import { useParams } from 'react-router-dom';
 
 export const PodcastEpisodePage = () => {
   const { podcastId, episodeId } = useParams();
-  const { data } = useFetch('getPodcastById', podcastId);
+  const { data } = useQueryPodcastEpisode(podcastId);
+
   console.log(data, podcastId, episodeId);
   return (<h1>EPISODE</h1>);
 };

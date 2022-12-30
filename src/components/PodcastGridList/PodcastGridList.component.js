@@ -1,9 +1,15 @@
+import { PodcastBox } from 'components';
 import { StyledPodcastGridList } from './PodcastGridList.styles';
 
-export const PodcastGridList = () => {
+export const PodcastGridList = ({podcasts}) => {
   return (
     <StyledPodcastGridList>
-      <span>PodcastGridList</span>
+      {podcasts?.map(podcast => (
+        <PodcastBox
+          key={podcast.id.attributes['im:id']}
+          podcast={podcast}
+        />
+      ))}
     </StyledPodcastGridList>
   );
 };

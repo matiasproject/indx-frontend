@@ -1,5 +1,4 @@
 /* eslint-disable import/export */
-export * from './BoxInfo';
 export * from './Header';
 export * from './PodcastBox';
 export * from './PodcastBoxDetail';

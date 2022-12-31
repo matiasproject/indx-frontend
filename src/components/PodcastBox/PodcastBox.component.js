@@ -1,15 +1,15 @@
 import { Link } from 'components';
 import { StyledPodcastBox } from './PodcastBox.styles';
+import { destructuringDataPodcasts } from 'utils';
 
 export const PodcastBox = ({podcast}) => {
   const {
-    id: { attributes: { 'im:id': podcastId} },
-    'im:name': {label: podcastName},
-    'im:artist': {label: artist},
-    'im:image': image,
-  } = podcast;
+    podcastId,
+    podcastName,
+    artist,
+    imageUrl,
+  } = destructuringDataPodcasts(podcast);
 
-  const { label: imageUrl } = image[2];
   const title = podcastName.toUpperCase();
 
   return (

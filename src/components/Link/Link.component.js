@@ -1,17 +1,20 @@
-import { Link as LinkRouter } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { loading } from 'state';
+import { StyledLink } from './Link.styles';
 
 export const Link = ({children, to}) => {
+  const navigate = useNavigate();
   const showLoading = () => {
     loading.value = true;
     setTimeout(() => {
       loading.value = false;
-    }, 1500);
+      navigate(to);
+    }, 800);
   };
 
   return (
-    <LinkRouter to={to} onClick={showLoading}>
+    <StyledLink onClick={showLoading}>
       {children}
-    </LinkRouter>
+    </StyledLink>
   )
 };

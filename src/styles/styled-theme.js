@@ -16,7 +16,7 @@ const theme = {
   },
   lineHeight: {
     title: `${rem('31px')}`,
-    subTitle: `${rem('21px')}`,
+    subTitle: `${rem('23px')}`,
     paragraph: `${rem('19px')}`,
   },
 };

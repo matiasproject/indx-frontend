@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const StyledPodcastBox = styled.section`
   text-align: center;
-  min-width: 277px;
+  min-width: 250px;
   transition: all .2s ease-in-out;
   &:hover { transform: scale(1.03); }
 

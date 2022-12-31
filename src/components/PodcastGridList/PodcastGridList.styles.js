@@ -3,7 +3,8 @@ import styled from 'styled-components';
 export const StyledPodcastGridList = styled.section`
     max-width: 1200px;
     margin: 0 auto;
-    padding-bottom: 20vh;
+    padding: 200px 20px 20vh;
+    box-sizing: border-box;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);

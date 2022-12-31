@@ -6,8 +6,6 @@ export const PodcastListPage = () => {
   const {search, onFilterPodcast} = useInputSearch();
   const { data: podcasts } = useQueryPodcastList(search);
 
-  console.log(podcasts?.length)
-
   return (
     <MainLayout>
       <Component.Searcher
@@ -15,9 +13,7 @@ export const PodcastListPage = () => {
         value={search}
         results={podcasts?.length}
       />
-      <section style={{marginTop: '200px'}}>
-        <Component.PodcastGridList podcasts={podcasts} />
-      </section>
+      <Component.PodcastGridList podcasts={podcasts} />
     </MainLayout>
   );
 };

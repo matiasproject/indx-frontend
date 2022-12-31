@@ -19,5 +19,5 @@ export const Searcher = ({
 };
 
 Searcher.defaultProps = {
-  numResults: 0,
+  results: 0,
 };

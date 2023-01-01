@@ -1,7 +1,7 @@
 # Inditext - Podcaster
 
 <p align="left">
-  <img alt="capture" src="./doc/capture.png" width="350"/>
+  <img alt="capture" src="./doc/capture.png" width="500"/>
 </p>
 
 ## Requirements
@@ -22,23 +22,22 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Installation
 
  - Use the package manager [npm](https://www.npmjs.com/get-npm) in the folder of the project to install dependencies.
-
- - `Node.js 16 or later`
+ - Node.js 16 or later
 
 ```bash
 npm install
 ```
 ### IMPORTANT, ALLOW CORS BEFORE RUN APP IN LOCAL
-- It`s very important allow cors in this link: `https://cors-anywhere.herokuapp.com/corsdemo` and click in `Request temporary access to the demo server`
+- It`s very important allow cors in this [link](https://cors-anywhere.herokuapp.com/corsdemo) and click in **Request temporary access to the demo server**
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `Development mode`
+### Development mode
 ```bash
 npm start
 ```
-### `Build webapp for production`
+### Build webapp for production
 ```bash
 npm build
 ```

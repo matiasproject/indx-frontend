@@ -30,11 +30,11 @@ export const StyledPodcastBoxDetail = styled.section`
   }
   h3 {
     font-size: ${({ theme }) => theme.sizes.subTitle};
-    linet-height: ${({ theme }) => theme.lineHeight.subTitle};
+    line-height: ${({ theme }) => theme.lineHeight.subTitle};
     color: ${({ theme }) => theme.colors.black};
     margin-bottom: 10px;
     word-wrap: break-word;
-
+    font-weight: 600;
   }
   h4 {
     font-weight: 600;

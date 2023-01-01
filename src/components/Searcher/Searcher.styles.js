@@ -8,7 +8,6 @@ export const StyledSearcher = styled.section`
   justify-content: right;
   box-sizing: border-box;
   position: fixed;
-  width: 100%;
   top: 68px; 
   left: 0;
   right: 0;

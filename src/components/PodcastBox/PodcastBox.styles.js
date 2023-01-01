@@ -29,7 +29,7 @@ export const StyledPodcastBox = styled.section`
     overflow: hidden;
     white-space: nowrap;
     font-size: ${({ theme }) => theme.sizes.subTitle};
-    linet-height: ${({ theme }) => theme.lineHeight.subTitle};
+    line-height: ${({ theme }) => theme.lineHeight.subTitle};
     color: ${({ theme }) => theme.colors.black};
     margin-bottom: 10px;
   }

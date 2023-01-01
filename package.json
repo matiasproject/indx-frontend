@@ -3,22 +3,21 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "node": ">=14",
+    "node": ">=16",
     "npm": ">=6"
   },
   "dependencies": {
-    "@preact/signals-react": "^1.2.1",
+    "@preact/signals-react": "1.2.1",
     "@tanstack/react-query": "4.20.4",
     "@tanstack/react-query-devtools": "4.20.4",
     "@testing-library/jest-dom": "5.16.5",
     "@testing-library/react": "13.4.0",
     "@testing-library/user-event": "13.5.0",
-    "linkify-react": "^4.0.2",
-    "linkifyjs": "^4.0.2",
+    "linkify-react": "4.0.2",
+    "linkifyjs": "4.0.2",
     "polished": "4.2.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-icons": "4.7.1",
     "react-router-dom": "6.6.1",
     "react-scripts": "5.0.1",
     "styled-components": "5.3.6"

@@ -7,18 +7,17 @@ import { StyledPodcastDetail, StyledLoading } from './PodcastDetail.styles';
 export const PodcastDetailPage = () => {
   window.scrollTo(0, 0);
   const { podcastId } = useParams();
-  const { data: episodeList } = useQueryPodcastById(podcastId);
+  const { data: trackList } = useQueryPodcastById(podcastId);
   const { data: podcastDetail } = useQueryPodcastEpisode(podcastId);
 
-  console.log(episodeList, podcastDetail);
   return (
     <MainLayout>
       {
-        (episodeList && podcastDetail)
+        (trackList && podcastDetail)
           ? (
             <StyledPodcastDetail>
               <Component.PodcastBoxDetail podcast={podcastDetail} />
-              <section style={{background: '#efefef'}}>content</section>
+              <Component.PodcastBoxDetailList trackList={trackList} />
             </StyledPodcastDetail>
           ) : (
             <StyledLoading>

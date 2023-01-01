@@ -1,7 +1,7 @@
 import Linkify from 'linkify-react';
 import { StyledDescription } from './Description.styles';
 
-export const Description = ({description}) => {
+export const Description = ({text}) => {
   const renderLink = ({ attributes, content }) => {
     const { href, ...props } = attributes;
     return (
@@ -17,7 +17,7 @@ export const Description = ({description}) => {
   return (
     <StyledDescription>
       <Linkify as='p' options={{ render: renderLink }}>
-        {description}
+        {text}
       </Linkify>
     </StyledDescription>
   )

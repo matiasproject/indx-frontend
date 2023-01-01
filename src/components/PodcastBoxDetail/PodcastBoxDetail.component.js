@@ -30,7 +30,7 @@ export const PodcastBoxDetail = ({podcast}) => {
         <div>
           <h4>Description:</h4>
           <Component.Description
-            description={description}
+            text={description}
           />
         </div>
       </div>

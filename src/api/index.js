@@ -11,8 +11,7 @@ async function fetchPodcast(url) {
 export const getPodcast = () => fetchPodcast(itunesPodcastUrl);
 
 export const getPodcastById = (podcastId) => {
-  const queryParams = 'media=podcast&entity=podcastEpisode&limit=100';
-  const urlPodcastId = `${corsHerokuUrl}?id=${podcastId}&${queryParams}`;
+  const queryParams = `id=${podcastId}&media=podcast&entity=podcastEpisode`;
 
-  return fetchPodcast(urlPodcastId);
+  return fetchPodcast(`${corsHerokuUrl}?${queryParams}`);
 };

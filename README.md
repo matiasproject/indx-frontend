@@ -4,6 +4,10 @@
   <img alt="capture" src="./doc/capture.png" width="500"/>
 </p>
 
+## Demo
+
+You can try it [here](https://indx-frontend-podcaster.web.app/).
+
 ## Requirements
 See requirements in [doc](./doc/prueba-tecnica-front-end-zaracom_podcasts.pdf).
 
@@ -27,8 +31,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ```bash
 npm install
 ```
-### IMPORTANT, ALLOW CORS BEFORE RUN APP IN LOCAL
-- It`s very important allow cors in this [link](https://cors-anywhere.herokuapp.com/corsdemo) and click in **Request temporary access to the demo server**
+### CORS PROXY
+- For cors proxy i used [corsproxy.io](https://corsproxy.io).
 ## Available Scripts
 
 In the project directory, you can run:

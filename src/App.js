@@ -5,11 +5,14 @@ import { ThemeProvider as Styled } from 'styled-components';
 import StyledGlobal from 'styles/styled-global';
 import styledTheme from 'styles/styled-theme';
 import { routes } from 'pages';
+import { oneDayInMilliseconds } from 'constants';
 
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
       refetchOnWindowFocus: false,
+      keepPreviousData: true,
+      staleTime: oneDayInMilliseconds,
     },
   },
 });

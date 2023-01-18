@@ -8,3 +8,4 @@ export * from './PodcastGridList';
 export * from './Searcher';
 export * from './Link';
 export * from './Description';
+export * from './Error';

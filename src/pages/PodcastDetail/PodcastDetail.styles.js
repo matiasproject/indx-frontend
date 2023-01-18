@@ -11,16 +11,3 @@ export const StyledPodcastDetail = styled.section`
   grid-column-gap: 74px;
   grid-row-gap: 0px;
 `;
-
-export const StyledLoading = styled.section`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  > p {
-    font-size: ${({ theme }) => theme.sizes.subTitle};
-    line-height: ${({ theme }) => theme.lineHeight.subTitle};
-    color: ${({ theme }) => theme.colors.gray};
-    font-weight: 500;
-  }
-`;

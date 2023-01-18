@@ -4,10 +4,10 @@ import { useQueryPodcastList, useInputSearch } from 'hooks';
 
 export const PodcastListPage = () => {
   const {search, onFilterPodcast} = useInputSearch();
-  const { data: podcasts } = useQueryPodcastList(search);
+  const { data: podcasts, error, isLoading } = useQueryPodcastList(search);
 
   return (
-    <MainLayout>
+    <MainLayout error={error} isLoading={isLoading}>
       <Component.Searcher
         handleChange={onFilterPodcast}
         value={search}

@@ -8,6 +8,7 @@ const theme = {
     gray: '#808080',
     mediumGray: '#c5c5c5',
     lightGray: '#efefef',
+    mediumBlue: '#40a9ff',
   },
   sizes: {
     title: `${rem('28px')}`,

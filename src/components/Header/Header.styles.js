@@ -6,11 +6,6 @@ export const StyledHeader = styled.header`
   color: ${({ theme }) => theme.colors.blue};
   background-color: ${({ theme }) => theme.colors.white};
   box-shadow: -1px 2px 8px -5px rgba(224,224,224,0.73);
-  padding: ${rem('20px')};
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-sizing: border-box;
   position: fixed;
   width: 100%;
   top: 0; 
@@ -20,5 +15,22 @@ export const StyledHeader = styled.header`
   h1 {
     font-size: ${({ theme }) => theme.sizes.title};
     font-weight: 600;
+  }
+  div {
+    display: flex;
+    align-items: center;
+    > span:first-child {
+      margin-right: 20px;
+    }
+  }
+  > nav {
+    width: 100%;
+    max-width: ${({ theme }) => theme.breakpoints.large};
+    margin: 0 auto;
+    padding: ${rem('20px')};
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
   }
 `;

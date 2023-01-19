@@ -5,7 +5,7 @@ export const NotFoundPage = () => {
   return (
     <MainLayout>
       <StyledNotFound>
-        <h2>Página no encontrada</h2>
+        <h2>Not found</h2>
       </StyledNotFound>
     </MainLayout>
   );

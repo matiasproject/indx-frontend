@@ -1,7 +1,8 @@
 # Inditext - Podcaster
 
 <p align="left">
-  <img alt="capture" src="./doc/capture.png" width="500"/>
+  <img alt="capture-1" src="./doc/capture.png" width="450"/>
+  <img alt="capture-2" src="./doc/simulator-2.png" width="150"/>
 </p>
 
 ## Demo

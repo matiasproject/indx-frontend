@@ -2,6 +2,11 @@ import styled from 'styled-components';
 
 export const StyledPodcastBoxDetail = styled.section`
   width: 300px;
+  @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 40px;
+  }
   img {
     margin-bottom: 20px;
     width: 150px;

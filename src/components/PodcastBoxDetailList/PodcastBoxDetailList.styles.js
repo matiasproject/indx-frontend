@@ -2,6 +2,9 @@ import styled from 'styled-components';
 import { rem } from 'polished';
 
 export const StyledPodcastBoxDetailList = styled.section`
+  @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
+    padding-bottom: 10vh;
+  }
   > header {
     box-shadow: 1px 1px 11px 1px rgb(224 224 224 / 73%);
     padding: 20px;
@@ -18,6 +21,11 @@ export const StyledPodcastBoxDetailList = styled.section`
     padding: 20px;
     height: calc(100vh - 250px);
     overflow: auto;
+    @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
+      height: auto;
+      overflow: hidden;
+      padding: 10px;
+    }
 
     > header {
       padding: 5px 10px;
@@ -43,6 +51,9 @@ export const StyledPodcastBoxDetailList = styled.section`
       grid-template-columns: 1fr repeat(2, 100px);
       grid-template-rows: 1fr;
       align-items: center;
+      @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
+        grid-template-columns: 1fr repeat(2, 74px);
+      }
       > span {
         font-size: ${rem('13px')};
         font-size: ${rem('16px')};

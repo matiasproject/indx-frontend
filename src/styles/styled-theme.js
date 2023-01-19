@@ -20,6 +20,12 @@ const theme = {
     subTitle: `${rem('23px')}`,
     paragraph: `${rem('19px')}`,
   },
+  breakpoints: {
+    extraSmall: '375px',
+    small: '600px',
+    medium: '960px',
+    large: '1280px',
+  },
 };
 
 export default theme;

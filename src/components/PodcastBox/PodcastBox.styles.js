@@ -5,6 +5,9 @@ export const StyledPodcastBox = styled.section`
   min-width: 250px;
   transition: all .2s ease-in-out;
   &:hover { transform: scale(1.03); }
+  @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
+    margin-bottom: 35px;
+  }
 
   img {
     border-radius: 100px;

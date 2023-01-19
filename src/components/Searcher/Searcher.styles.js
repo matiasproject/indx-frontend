@@ -12,6 +12,7 @@ export const StyledSearcher = styled.section`
   left: 0;
   right: 0;
   z-index: 2;
+
   > span {
     padding: 8px;
     display: block;
@@ -36,6 +37,12 @@ export const StyledSearcher = styled.section`
     border: 1px solid ${({ theme }) => theme.colors.mediumGray};
     &:focus {
       outline: none;
+    }
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
+    justify-content: center;
+    > input {
+      width: 100%;
     }
   }
 `;
